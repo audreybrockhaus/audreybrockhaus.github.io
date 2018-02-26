@@ -1,0 +1,24 @@
+{
+  "name": "adrienne",
+  "version": "1.0.0",
+  "description": "Adrienne Hodges Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch scss -o css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/audreybrockhaus/adrienne.git"
+  },
+  "author": "Audrey Brockhaus",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/audreybrockhaus/adrienne/issues"
+  },
+  "homepage": "https://github.com/audreybrockhaus/adrienne#readme",
+  "dependencies": {
+    "node-sass": "^4.7.2",
+    "normalize.css": "^8.0.0"
+  }
+}

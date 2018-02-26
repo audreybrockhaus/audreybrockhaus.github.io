@@ -1,0 +1,151 @@
+html, body{
+  font-size: 12px;
+  @extend .open;
+  @media (min-width: $breakpoint-tablet) {
+    font-size: 14px;
+  }
+  @media (min-width: $breakpoint-desktop) {
+    font-size: 16px;
+  }
+}
+
+a{
+  color: inherit;
+}
+
+.nobreak{
+  white-space: nowrap;
+}
+
+h1, h2, h4, h5, h6{
+  @extend .bree;
+}
+
+h1{
+  font-size: 3rem;
+  margin-bottom: 4.6875rem;
+  width: 100%;
+}
+
+h2{
+  color: $yellow;
+  font-size: 2rem;
+  line-height: 1.55;
+}
+
+h3{
+  color: $yellow;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+}
+
+.fas, .svg-inline--fa{
+  color: $yellow;
+}
+
+//sections
+
+.flex-grid_profile{
+  background-image: url(../images/profile.png);
+  background-position: 30%;
+  background-size: cover;
+  min-height: 0;
+  @media (min-width: $breakpoint-tablet) {
+    background-position: center;
+    min-height: 100vh;
+  }
+}
+
+.col_text {
+  align-self: flex-end;
+  flex-basis: 75%;
+  padding: 2rem;
+  p{
+    color: $grayLight;
+    @extend .bree;
+    font-size: 1.5rem;
+    line-height: 1.92;
+  }
+  @media (min-width: $breakpoint-tablet) {
+    margin: 0 6rem 3rem 0;
+    padding: 1rem;
+  }
+}
+
+.box{
+  background-color: $yellow;
+  color: white;
+  display: flex;
+  width: 100%;
+  &:before{
+    content: "";
+    width: 1px;
+    margin-left: -1px;
+    float: left;
+    height: 0;
+    padding-top: 100%;
+  }
+  .aspect-ratio-box::after { /* to clear float */
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+.box_dark{
+  background-color: rgba(0,0,0,0.2);
+  top: 25%;
+}
+
+.box__text{
+  align-self: flex-end;
+  flex: 1;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.box__text_padding{
+  padding: 1rem;
+}
+
+//footer
+.footer p{
+  color: $grayLight;
+  line-height: 1.4;
+  margin: 0;
+  @media (min-width: $breakpoint-tablet) {
+    font-size: .75rem;
+  }
+}
+
+//social media
+.social-media{
+  font-size: 1.8rem;
+  list-style-type: none;
+  margin: 0;
+  text-align: right;
+  li{
+    display: inline-block;
+  }
+  a{
+    background-color: $grayLight;
+    display: inline-block;
+    padding: .3rem .2rem;
+    transition: background-color .5s;
+    &:hover, &:focus{
+      background-color: darken($grayLight, 20%);
+    }
+  }
+  .fas, .svg-inline--fa{
+    color: white;
+  }
+}
+
+//slides
+
+.slides__text{
+  bottom: 2rem;
+  padding: 1rem;
+  position: absolute;
+  margin-right: 75%;
+}

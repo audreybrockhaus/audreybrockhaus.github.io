@@ -1,0 +1,50 @@
+.flex-grid{
+  align-items: stretch;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  @media (min-width: $breakpoint-tablet) {
+    flex-wrap: nowrap;
+  }
+}
+
+.flex-grid_section{
+  min-height: 100vh;
+}
+
+.col {
+  flex: 1;
+  flex-grow: 1;
+  padding: 1rem;
+}
+
+.col_left{
+  @extend .col;
+  flex-basis: 50%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  padding: 0;
+  max-width: 250px;
+  @media (min-width: $breakpoint-tablet) {
+    flex-basis: 25%;
+    flex-grow: 1;
+  }
+}
+
+.col_left_stretch{
+  @extend .col_left;
+  display: flex;
+}
+
+.col_75{
+  flex-basis: 75%;
+}
+
+.col_25{
+  @extend .col;
+  align-self: flex-end;
+  flex-basis: 25%;
+  @media (min-width: $breakpoint-tablet) {
+    margin-bottom: 4.6875rem;
+  }
+}

@@ -1,0 +1,28 @@
+//breakpoints
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 900px;
+
+//colors
+$yellow: #ffbd10;
+$grayDark: #404042;
+$grayLight: #a1a1a1;
+
+//fonts
+$bree: 'Bree Serif', serif;
+$open: 'Open Sans', sans-serif;
+
+
+.bree{
+  font-family: $bree;
+  font-weight:400;
+}
+
+.open{
+  font-family: $open;
+  font-weight:400;
+}
+
+.openBold{
+  font-family: $open;
+  font-weight:700;
+}
