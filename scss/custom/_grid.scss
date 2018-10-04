@@ -10,6 +10,8 @@
 
 .flex-grid_section{
   min-height: 100vh;
+  max-width: $max-width;
+  margin: auto;
 }
 
 .col {

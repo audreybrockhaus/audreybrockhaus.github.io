@@ -11,6 +11,11 @@ html, body{
 
 a{
   color: inherit;
+  text-decoration-color: $yellow;
+}
+
+a.yellow{
+  color: $yellow;
 }
 
 .nobreak{
@@ -45,9 +50,9 @@ h3{
 
 //sections
 
-.flex-grid_profile{
+.wrapper_profile{
   background-image: url(../images/profile.png);
-  background-position: 30%;
+  background-position: center;
   background-size: cover;
   min-height: 0;
   @media (min-width: $breakpoint-tablet) {
@@ -67,7 +72,8 @@ h3{
     line-height: 1.92;
   }
   @media (min-width: $breakpoint-tablet) {
-    margin: 0 6rem 3rem 0;
+    //leaving space for right nav
+    margin: 0 4rem 4rem 0;
     padding: 1rem;
   }
 }
@@ -148,4 +154,57 @@ h3{
   padding: 1rem;
   position: absolute;
   margin-right: 75%;
+}
+
+//navigation
+
+aside{
+  display: none;
+  max-width: $max-width;
+  margin: auto;
+  pointer-events: none;
+  position: fixed;
+  text-align: right;
+  top: 0; left: 0; bottom: 0; right: 0;
+  width: 100%;
+  @media (min-width: $breakpoint-tablet) {
+    display: block;
+  }
+}
+
+.sidemenu{
+  pointer-events: auto;
+  position: absolute;
+  top: 50%;
+  transform: translate(0,-50%);
+  right: 0;
+}
+
+.square{
+  background: $grayLight;
+  display: block;
+  height: 1rem;
+  margin: 1.5rem;
+  width: 1rem;
+  transition: background-color .2s;
+  .active &{
+    background: $yellow;
+  }
+  &:hover{
+    opacity: .6;
+  }
+}
+
+.arrow{
+  bottom: 2rem;
+  cursor: pointer;
+  position: absolute;
+  left: 0; 
+  right: 0; 
+  margin: auto;
+  transition: all .3s ease-out;
+  width: 50px;
+  &:hover{
+    transform: scale(1.2);
+  }
 }

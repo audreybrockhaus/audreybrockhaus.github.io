@@ -5,6 +5,12 @@
   <title>Adrienne Hodges Portfolio</title>
   <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src="js/scroll.js"></script>
+  <script src="js/hide.js"></script>
   <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 </head>
 <body>
@@ -18,99 +24,135 @@
     </div>
     <div class="col col_text">
       <h2>I’m Adrienne Hodges. I’m a designer, writer and photographer in Phoenix, Arizona. </h2>
-      <p>When I'm not working on projects, I’m usually cultivating a flimsy facade of wittiness and worldliness on Instagram, Twitter or LinkedIn.</p> 
-      <p>I love minimalism, I hate clever ‘About Me’ statements. If you feel similarly, let‘s <span class="nobreak">collaborate.&nbsp;<a href="mailto:hodgehaus@gmail.com"><i class="fas fa-envelope"></i></a></span></p>
+      <p>When I'm not working on <a href="#projects">projects</a>, I’m usually cultivating a flimsy facade of wittiness and worldliness on <a href="#projects">Instagram</a>, <a href="#projects">Twitter</a> or <a href="#projects">LinkedIn</a>.</p> 
+      <p>I love minimalism, I hate clever ‘About Me’ statements. If you feel similarly, <a href="mailto:hodgehaus@gmail.com" class="yellow">let‘s collaborate</a>.&nbsp;<a href="mailto:hodgehaus@gmail.com"><i class="fas fa-envelope"></i></span></a></p>
     </div>
+    <a href="#resume" class="arrow">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 26.82" width="50" height="26.82">
+        <title>Scroll down for more</title>
+        <polygon points="25 26.82 0 1.82 1.82 0 25 23.18 48.18 0 50 1.82 25 26.82" style="fill: #ffbd10"/>
+      </svg>
+    </a>
   </div>
-  <div class="flex-grid flex-grid_section flex-grid_profile">
-     <div class="col_left">
-      <div class="box">
-      <div class="box__text">
-        <h1>résumé</h1>
-      </div>
-      </div>
-      <div class="box box_dark">
-        <div class="box__text">
-          <h1>interview</h1>
+  <div class="wrapper_profile" id="resume">
+    <div class="flex-grid flex-grid_section flex-grid_profile">
+      <div class="col_left">
+        <div class="box">
+          <div class="box__text">
+            <h1>résumé</h1>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="col col_75">
-      <p>
-        &nbsp; 
-      </p>
+      <div class="col col_75">
+        <p>
+          &nbsp; 
+        </p>
+         <a href="#portfolio" class="arrow">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 26.82" width="50" height="26.82">
+        <title>Scroll down for more</title>
+        <polygon points="25 26.82 0 1.82 1.82 0 25 23.18 48.18 0 50 1.82 25 26.82" style="fill: #fff"/>
+      </svg>
+    </a>
+      </div>
     </div>
   </div>
-  <!-- <div class="flex-grid flex-grid_section">
+  <div class="flex-grid flex-grid_section" id="portfolio">
     <div class="box-container">
       <div class="box">
-      <div class="box__text">
-        <h1>projects</h1>
+        <div class="box__text">
+          <h1>projects</h1>
+        </div>
+      </div>
+      <div>
+        <ul class="portfolio-menu">
+          <li><a id="all" class="active">All</a></li>
+          <li><a id="writing">Writing</a></li>
+          <li><a id="design">Design</a></li>
+          <li><a id="photography">Photography</a></li>
+          <li><a id="video">Video</a></li>
+          <li><a id="pm">Project Management</a></li>
+        </ul>
       </div>
     </div>
-    </div>
-    <div class="col">
-      <section class="slider">
-        <div id="slider" class="flexslider">
-          <ul class="slides">
-            <li>
-              <img src="images/kitchen_adventurer_cheesecake_brownie.jpg" />
-              <div class="slides__text">
-                <h3>Safety Conference</h3>
-                <p>Lorem Ipsum</p>
-              </div>
-            </li>
-            <li>
-              <img src="images/kitchen_adventurer_lemon.jpg" />
-              <div class="slides__text">
-                <h3>Safety Conference</h3>
-                <p>Lorem Ipsum</p>
-              </div>
-            </li>
-            <li>
-              <img src="images/kitchen_adventurer_donut.jpg" />
-              <div class="slides__text">
-                <h3>Safety Conference</h3>
-                <p>Lorem Ipsum</p>
-              </div>
-            </li>
-            <li>
-              <img src="images/kitchen_adventurer_caramel.jpg" />
-              <div class="slides__text">
-                <h3>Safety Conference</h3>
-                <p>Lorem Ipsum</p>
-              </div>
-            </li>
-          </ul>
+    <div class="col portfolio-wrapper">
+      <div class="portfolio-item" data-category="writing">
+        <div class="portfolio-title">
+          <h2>The safety conference</h2>
         </div>
-        <div id="carousel" class="flexslider dark">
-          <ul class="slides">
-            <li>
-              <img src="images/kitchen_adventurer_cheesecake_brownie.jpg" />
-            </li>
-            <li>
-              <img src="images/kitchen_adventurer_lemon.jpg" />
-            </li>
-            <li>
-              <img src="images/kitchen_adventurer_donut.jpg" />
-            </li>
-            <li>
-              <img src="images/kitchen_adventurer_caramel.jpg" />
-            </li>
-          </ul>
+      </div>
+      <div class="portfolio-item" data-category="design">
+        <div class="portfolio-title">
+          <h2>The banana conference</h2>
         </div>
-      </section>
+      </div>
+      <div class="portfolio-item" data-category="photography">
+        <div class="portfolio-title">
+          <h2>The apple conference</h2>
+        </div>
+      </div>
+      <div class="portfolio-item" data-category="video">
+        <div class="portfolio-title">
+          <h2>The pineapple conference</h2>
+        </div>
+      </div>
+      <div class="portfolio-item" data-category="pm">
+        <div class="portfolio-title">
+          <h2>The grape conference</h2>
+        </div>
+      </div>
+      <div class="portfolio-item" data-category="writing">
+        <div class="portfolio-title">
+          <h2>The raspberry conference</h2>
+        </div>
+      </div>
+      <div class="portfolio-item" data-category="design">
+        <div class="portfolio-title">
+          <h2>The genie conference</h2>
+        </div>
+      </div>
+      <div class="portfolio-item" data-category="design">
+        <div class="portfolio-title">
+          <h2>The kiwi conference</h2>
+        </div>
+      </div>
+       <div class="portfolio-item" data-category="writing">
+        <div class="portfolio-title">
+          <h2>The grape conference</h2>
+        </div>
+      </div>
+      <div class="portfolio-item" data-category="photography">
+        <div class="portfolio-title">
+          <h2>The raspberry conference</h2>
+        </div>
+      </div>
+      <div class="portfolio-item" data-category="photography">
+        <div class="portfolio-title">
+          <h2>The genie conference</h2>
+        </div>
+      </div>
+      <div class="portfolio-item" data-category="video">
+        <div class="portfolio-title">
+          <h2>The kiwi conference</h2>
+        </div>
+      </div>
     </div>
-  </div> -->
+    <a href="#resume" class="arrow">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 26.82" width="50" height="26.82">
+        <title>Scroll down for more</title>
+        <polygon points="25 26.82 0 1.82 1.82 0 25 23.18 48.18 0 50 1.82 25 26.82" style="fill: #ffbd10"/>
+      </svg>
+    </a>
+  </div>
 <!--   <div class="flex-grid flex-grid_dark">
     <div class="col">
     </div>
   </div> -->
-  <footer class="flex-grid footer">
-    <div class="col_left_stretch">
+  <div id="footer">
+  <footer class="flex-grid flex-grid_section">
+    <div class="col_left">
       <div class="box">
-        <div class="box__text box__text_padding">
-          <h1>contact</h1>
+        <div class="box__text">
+          <h1>Contact</h1>
       </div>
     </div>
     </div>
@@ -131,37 +173,11 @@
         <li><a href="#"><i class="fab fa-fw fa-instagram"></i></a></li>
       </ul>
     </div>
-  </footer>    
-   <!-- jQuery -->
-  <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script> -->
+  </footer>
+  <aside>
+    <div class="sidemenu">
+    </div>
+  </aside>    
 
-  <!-- FlexSlider -->
- <!--  <script defer src="js/jquery.flexslider.js"></script>
-
-  <script type="text/javascript">
-    $(window).load(function(){
-      $('#carousel').flexslider({
-        animation: "slide",
-        controlNav: false,
-        animationLoop: false,
-        slideshow: false,
-        itemWidth: 210,
-        itemMargin: 5,
-        asNavFor: '#slider'
-      });
-
-      $('#slider').flexslider({
-        animation: "slide",
-        controlNav: false,
-        animationLoop: false,
-        slideshow: false,
-        sync: "#carousel",
-        start: function(slider){
-          $('body').removeClass('loading');
-        }
-      });
-    });
-  </script> -->
 </body>
 </html>
