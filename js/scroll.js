@@ -63,7 +63,7 @@ $(document).ready(function(){
 
     // Make sure this.hash has a value before overriding default behavior
       var $myTarget = $(this).attr('href');
-      if ($myTarget.match('^#')){
+      if ($myTarget && $myTarget.match('^#')){
         // Prevent default anchor click behavior
         event.preventDefault();
 

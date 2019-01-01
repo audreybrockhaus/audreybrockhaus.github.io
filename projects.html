@@ -11,6 +11,7 @@
   crossorigin="anonymous"></script>
   <script src="js/scroll.js"></script>
   <script src="js/hide.js"></script>
+  <script src="js/projects.js"></script>
   <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 </head>
 <body class="detail">
@@ -33,23 +34,59 @@
           </div>
       </div>
       <div class="subcol_text">
-        <div class="project-description">
-          <h3>Client</h3>
-          <h3 class="gray">Dewpoint</h3>
+        <!-- Begin description slides-->
+        <div class="project-slide active" data-slide-name="dewpoint">
+          <div class="project-description">
+            <h3>Client</h3>
+            <h3 class="gray">Dewpoint</h3>
+          </div>
+          <div class="project-description">
+            <h3>Contribution</h3>
+            <h3 class="gray">Design</h3>
+          </div>
+          <h1>The Virtualization Campaign</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> 
         </div>
-        <div class="project-description">
-          <h3>Contribution</h3>
-          <h3 class="gray">Design</h3>
+        <div class="project-slide" data-slide-name="banana">
+          <div class="project-description">
+            <h3>Client</h3>
+            <h3 class="gray">Dewpoint</h3>
+          </div>
+          <div class="project-description">
+            <h3>Contribution</h3>
+            <h3 class="gray">Design</h3>
+          </div>
+          <h1>The Banana Campaign</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> 
         </div>
-        <h1>The Virtualization Campaign</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div class="project-slide" data-slide-name="apple">
+          <div class="project-description">
+            <h3>Client</h3>
+            <h3 class="gray">Dewpoint</h3>
+          </div>
+          <div class="project-description">
+            <h3>Contribution</h3>
+            <h3 class="gray">Design</h3>
+          </div>
+          <h1>The Apple Campaign</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> 
+        </div>
+        <!-- End description slides-->
       </div>
     </div>
+    <a class="arrow-left">
+      <svg xmlns="http://www.w3.org/2000/svg" width="26.82" height="50" viewBox="0 0 26.82 50"><title>arrow-left</title><path d="M25,0l1.82,1.82L3.64,25,26.82,48.18,25,50,0,25Z" transform="translate(0 0)" style="fill:#a1a1a1"/></svg>
+      <h6>Previous<br>Project</h6>
+    </a>
     <a href="#pictures" class="arrow">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 26.82" width="50" height="26.82">
         <title>Scroll down for more</title>
         <polygon points="25 26.82 0 1.82 1.82 0 25 23.18 48.18 0 50 1.82 25 26.82" style="fill: #ffbd10"/>
       </svg>
+    </a>
+    <a class="arrow-right">
+      <h6>Next<br>Project</h6>
+      <svg xmlns="http://www.w3.org/2000/svg" width="26.82" height="50" viewBox="0 0 26.82 50"><title>arrow-right</title><path d="M26.82,25l-25,25L0,48.18,23.18,25,0,1.82,1.82,0Z" style="fill:#a1a1a1"/></svg>
     </a>
   </div>
   <div class="flex-grid flex-grid_full-width" id="pictures">
@@ -60,20 +97,47 @@
         </div>
       </div>
     </div>
-    <div class="col detail-wrapper">
-      <div class="detail-grid">
-        <img src="images/pieces/safety-works/sw-full-suite.jpg" alt="">
+    <!-- Begin picture slides-->
+    <div class="col project-slide active" data-slide-name="dewpoint">
+      <div class="detail-wrapper">
+        <div class="detail-grid">
+          <img src="images/pieces/safety-works/sw-full-suite.jpg" alt="">
+        </div>
+        <div class="detail-grid">
+          <img src="images/pieces/safety-works/sw-ipad.jpg" alt="">
+        </div>
+        <div class="detail-grid">
+          <img src="images/pieces/safety-works/sw-registration.jpg" alt="">
+        </div>  
+        <div class="detail-grid">
+          <img src="images/pieces/safety-works/sw-save-the-date.jpg" alt="">
+        </div>    
       </div>
-      <div class="detail-grid">
-        <img src="images/pieces/safety-works/sw-ipad.jpg" alt="">
-      </div>
-      <div class="detail-grid">
-        <img src="images/pieces/safety-works/sw-registration.jpg" alt="">
-      </div>  
-      <div class="detail-grid">
-        <img src="images/pieces/safety-works/sw-save-the-date.jpg" alt="">
-      </div>    
     </div>
+    <div class="col project-slide" data-slide-name="banana">
+      <div class="detail-wrapper">
+        <div class="detail-grid">
+          <img src="images/pieces/safety-works/sw-full-suite.jpg" alt="">
+        </div>
+        <div class="detail-grid">
+          <img src="images/pieces/safety-works/sw-ipad.jpg" alt="">
+        </div>   
+      </div>
+    </div>
+    <div class="col project-slide" data-slide-name="apple">
+      <div class="detail-wrapper">
+        <div class="detail-grid">
+          <img src="images/pieces/safety-works/sw-full-suite.jpg" alt="">
+        </div>
+        <div class="detail-grid">
+          <img src="images/pieces/safety-works/sw-ipad.jpg" alt="">
+        </div>
+        <div class="detail-grid">
+          <img src="images/pieces/safety-works/sw-registration.jpg" alt="">
+        </div>    
+      </div>
+    </div>
+    <!-- End picture slides-->
     <a href="#feature" class="arrow">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 26.82" width="50" height="26.82">
         <title>Scroll down for more</title>
@@ -91,7 +155,17 @@
     </div>
     </div>
     <div class="col col_text">
-      <img src="images/pieces/feature.png" alt="" class="feature-image">
+      <!-- Begin feature slides-->
+      <div class="project-slide active" data-slide-name="dewpoint">
+        <img src="images/pieces/feature.png" alt="" class="feature-image">
+      </div>
+      <div class="project-slide" data-slide-name="banana">
+        <img src="images/pieces/feature.png" alt="" class="feature-image">
+      </div>
+      <div class="project-slide" data-slide-name="apple">
+        <img src="images/pieces/feature.png" alt="" class="feature-image">
+      </div>
+      <!-- End feature slides-->
     </div>
   </div>
   <footer class="interior-footer">

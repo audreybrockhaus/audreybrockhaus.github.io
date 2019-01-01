@@ -265,16 +265,51 @@ aside{
   }
 }
 
-.arrow{
+.arrow-base{
+  display: block;
+  text-decoration: none !important;
   bottom: 2rem;
   cursor: pointer;
   position: absolute;
-  left: 0; 
-  right: 0; 
-  margin: auto;
   transition: all .3s ease-out;
-  width: 50px;
   &:hover{
     transform: scale(1.2);
   }
+  svg{
+    margin: 5px;
+  }
+  h6{
+    color: $grayLight;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 16px;
+    margin: 0;
+    @extend .open;
+    font-weight: bold;
+  }
+  >*{
+    vertical-align: middle;
+  }
+}
+
+.arrow{
+  left: 0; 
+  right: 0; 
+  margin: auto;
+  width: 50px;
+  @extend .arrow-base;
+  svg{
+    margin: 0;
+  }
+}
+
+.arrow-left{
+  @extend .arrow-base;
+  left: 0; 
+}
+
+.arrow-right{
+  @extend .arrow-base;
+  right: 0; 
+  text-align: right;
 }

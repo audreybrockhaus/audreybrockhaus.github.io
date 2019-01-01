@@ -25,3 +25,15 @@
     }
   }
 }
+
+.col{
+  overflow: hidden;
+}
+
+.project-slide{
+  display: none; 
+  &.active{
+    display: block;
+  }
+}
+
