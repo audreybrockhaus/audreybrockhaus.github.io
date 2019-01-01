@@ -1,4 +1,1 @@
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 26.82">
-  <title>arrow</title>
-  <polygon points="25 26.82 0 1.82 1.82 0 25 23.18 48.18 0 50 1.82 25 26.82" style="fill: #ffbd10"/>
-</svg>
+<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 26.82"><path fill="#ffbd10" d="M25 26.82l-25-25L1.82 0 25 23.18 48.18 0 50 1.82l-25 25z"/></svg>

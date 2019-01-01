@@ -1,17 +1,20 @@
 .portfolio-menu{
   list-style-type: none;
-  text-align: right;
+  text-align: left;
   text-transform: uppercase;
   color: $grayLight;
   font-size: 1.125rem;
   font-weight: 700;
   margin-top: 3rem;
+  padding: 0;
   li {
-    margin: 1.5rem 0;
+    display: inline-block;
+    margin: .5rem 1rem .5rem 0;
     a{
       cursor: pointer;
       display: inline-block;
       transition: color, border-color, .5s;
+      border-bottom: 2px solid transparent;
       &.active{
         color: $yellow;
         border-bottom: 2px solid $grayLight;
@@ -25,6 +28,14 @@
       }
     }
   }
+  @media (min-width: $breakpoint-tablet) {
+    text-align: right;
+    padding-left: 1rem;
+    li {
+      margin: 1.5rem 0;
+      display: block;
+    }
+  }
 }
 
 .portfolio-wrapper{
@@ -32,52 +43,95 @@
   // display: flex;
   // flex-wrap: wrap;
   display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
-  grid-template-rows: 25% 25% 25%;
-  // padding: 1rem 3rem 1rem 1rem;
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
+  grid-template-columns: 50fr 50fr;
+  padding-bottom: 5rem;
    @media (min-width: $breakpoint-tablet) {
-    margin: 25% 2rem 10% 0;
+    grid-template-columns: 33fr 33fr 33fr;
+    margin: 0 2rem 5rem 0;
+    padding-bottom: 1rem;
   }
-   @media (min-width: $breakpoint-desktop) {
-    margin: 250px 2rem 75px 0;
-  }
+  @media (min-width: $breakpoint-desktop){
+    grid-template-columns: 25fr 25fr 25fr 25fr;
+    grid-template-rows: 25fr 25fr 25fr;
+  } 
+}
+
+.display-mobile{
+  grid-column-start: 1;
+  grid-column-end: span 2;
 }
 
 .portfolio-item{
+  min-height: 13rem;
   display: flex;
   align-items: flex-end;
-  // flex: 1 0 100%;
-  // margin: 1%;
-  // min-height: 100px;
-  // max-height: 200px;
   height:auto;
-  background-color: green;
-  opacity: .5;
+  opacity: .3;
   transition: opacity .5s;
-  pointer-events: none;
+  background-size: cover;
+  background-position: center center;
+  background-color: black;
+  position: relative;
   &.visible{
     opacity: 1;
     pointer-events: auto;
   }
-  // @media (min-width: $breakpoint-tablet) {
-  //   flex: 0 0 48%;
-  // }
-  // @media (min-width: $breakpoint-desktop) {
-  //   flex: 0 0 23%;
-  // }
+  @media (min-width: $breakpoint-tablet) {
+    min-height: 10rem;
+  }
+  &:hover, &:focus{
+    
+  }
 }
 
-.portfolio-item:before{
-  content:'';
-  // padding-top: 25%;
+.portfolio-item:nth-child(1n){
+  background-image: url('../images/pieces/safety-works/thumbs/sw-full-suite.jpg');
+}
+
+.portfolio-item:nth-child(2n){
+  background-image: url('../images/pieces/safety-works/thumbs/sw-ipad.jpg');
+}
+
+.portfolio-item:nth-child(3n){
+  background-image: url('../images/pieces/safety-works/thumbs/sw-registration.jpg');
+}
+
+.portfolio-item:nth-child(4n){
+  background-image: url('../images/pieces/safety-works/thumbs/sw-save-the-date.jpg');
 }
 
 .portfolio-title{
+  display: none;
   margin: .5rem;
   padding: .5rem;
-  background-color: red;
   h2{
     margin: 0;
     font-size: 1rem;
+    line-height: 1.1;
+    z-index: 10;
   }
 }
+
+.overlay{
+  opacity: 0;
+  transition: opacity .5s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,.6);
+}
+
+.portfolio-item:hover, .portfolio-item:focus{
+  .overlay{
+    opacity: 1;
+  }
+  .portfolio-title{
+    display: block;
+    z-index: 100;
+  }
+}
+

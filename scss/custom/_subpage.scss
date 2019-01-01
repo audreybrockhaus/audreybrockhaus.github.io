@@ -1,0 +1,27 @@
+.top-menu{
+  @extend .portfolio-menu;
+  text-align: left;
+  padding: 0;
+  li {
+    display: inline-block;
+    margin: .5rem 1rem .5rem 0;
+    a{
+      text-decoration: none;
+      cursor: pointer;
+      display: inline-block;
+      transition: color, border-color, .5s;
+      border-bottom: 2px solid transparent;
+      &.active{
+        color: $yellow;
+        border-bottom: 2px solid $grayLight;
+        &:hover, &:active{
+          color: $yellow;
+          border-bottom: 2px solid $yellow;
+        }
+      }
+      &:hover, &:active{
+        color: darken($grayLight, 20%);
+      }
+    }
+  }
+}

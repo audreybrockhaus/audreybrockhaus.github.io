@@ -1,0 +1,12 @@
+# Nodejs for development
+node_modules/
+
+# Cobalt
+.cobalt
+
+# OSX
+.DS_Store
+
+# Editor
+*.iml
+.idea/

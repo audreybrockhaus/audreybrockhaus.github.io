@@ -4,6 +4,17 @@ $(document).ready(function(){
 
   $slideItems.addClass('visible');
 
+  $slideItems.on('click', function(e){
+    if (!$(e.target.parentNode).hasClass('visible')){
+      $slideItems.addClass('visible');
+      return false;
+    }
+  });
+
+  // $slideItems.not(".visible").on('click', function(){
+  //   $slideItems.addClass('visible');
+  // });
+
   $slideNav.on('click', function(event) {
     var category = event.target.id;
     $slideItems.removeClass('visible');
