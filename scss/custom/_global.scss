@@ -1,6 +1,7 @@
 html, body{
   font-size: 12px;
   box-sizing: border-box;
+  scroll-behavior: smooth;
   @extend .open;
   @media (min-width: $breakpoint-tablet) {
     font-size: 14px;

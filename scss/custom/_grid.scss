@@ -88,3 +88,36 @@
     margin-bottom: 4.6875rem;
   }
 }
+
+.row{
+  display: block;
+  @media (min-width: $breakpoint-tablet) {
+    display: flex;
+    margin: 0 -16px;
+    flex-wrap: nowrap;
+    > *{
+      flex: 1 0 50%;
+      padding: 0 16px;
+    }
+  }
+}
+
+.resume .col_text, .resume .col_left{
+  p, li{
+    font-size: 1rem;
+  }
+  p{
+    margin: 0;
+    color: black;
+    &.gray{
+      color: $grayLight;
+    }
+    &.indent{
+      margin: 1em 0 1em 24px;
+    }
+  }
+}
+
+.resume h4{
+  margin-bottom: .5em;
+}
