@@ -1,10 +1,23 @@
 .top-menu{
+  text-align: right;
+  position: absolute;
+  top: 0;
+  right: 0;
+  @media (min-width: $breakpoint-tablet) {
+    text-align: left;
+    position: relative;
+  }
   @extend .portfolio-menu;
-  text-align: left;
   padding: 0;
   li {
-    display: inline-block;
-    margin: .5rem 1rem .5rem 0;
+    display: block;
+    font-size: 1.5rem;
+    @media (min-width: $breakpoint-tablet) {
+      display: inline-block;
+      margin: .5rem 1rem .5rem 0;
+      font-size: 1.2rem;
+    }
+    margin: 0 1rem 1rem;
     a{
       text-decoration: none;
       cursor: pointer;

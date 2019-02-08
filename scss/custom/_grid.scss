@@ -63,6 +63,12 @@
   }
 }
 
+.col_text.col_interior_xp{
+  @media (max-width: $breakpoint-tablet) {
+    padding: 1rem 1rem 8rem 2rem;
+  }
+}
+
 .project-description{
   display: inline-block;
   width: 49%;

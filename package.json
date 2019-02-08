@@ -18,13 +18,13 @@
   },
   "homepage": "https://github.com/audreybrockhaus/adrienne#readme",
   "dependencies": {
-    "node-sass": "^4.7.2",
+    "node-sass": "^4.11.0",
     "normalize.css": "^8.0.0"
   },
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^6.0.0",
-    "gulp-image": "^4.4.0",
+    "gulp-image": "^4.4.1",
     "gulp-sass": "^4.0.2"
   }
 }
